@@ -24,12 +24,12 @@
 - ![#2A4A5C](https://placehold.it/15/2A4A5C/000000?text=+) `#2A4A5C` (базовый текст)
 - ![#255A9B](https://placehold.it/15/255A9B/000000?text=+) `#255A9B` (кнопка fb)
 - ![#0076B6](https://placehold.it/15/0076B6/000000?text=+) `#0076B6` (кнопка in)
-- ![#3698FB](https://placehold.it/15/3698FB/000000?text=+) `#3698FB`
-- ![#7B8A92](https://placehold.it/15/7B8A92/000000?text=+) `#7B8A92`
-- ![#96A5B1](https://placehold.it/15/96A5B1/000000?text=+) `#96A5B1`
-- ![#AFAFAF](https://placehold.it/15/AFAFAF/000000?text=+) `#AFAFAF`
-- ![#EEEEEE](https://placehold.it/15/EEEEEE/000000?text=+) `#EEEEEE`
-- ![#FFFFFF](https://placehold.it/15/FFFFFF/000000?text=+) `#FFFFFF`
+- ![#3698FB](https://placehold.it/15/3698FB/000000?text=+) `#3698FB` (кнопка Create Account)
+- ![#7B8A92](https://placehold.it/15/7B8A92/000000?text=+) `#7B8A92` (тексты Title - "Get iintoo it today" и "What type of investor are you?")
+- ![#96A5B1](https://placehold.it/15/96A5B1/000000?text=+) `#96A5B1` (тексты подзаголовков)
+- ![#AFAFAF](https://placehold.it/15/AFAFAF/000000?text=+) `#AFAFAF` (серый текст email, phone, подсказка и т.д)
+- ![#EEEEEE](https://placehold.it/15/EEEEEE/000000?text=+) `#EEEEEE` (рамки для input)
+- ![#FFFFFF](https://placehold.it/15/FFFFFF/000000?text=+) `#FFFFFF` (белый)
 
 ### Результат
 Предоставить в виде 2 ссылок
