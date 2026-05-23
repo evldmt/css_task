@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    color: #2A4A5C;
+}
+
+.main {
+    display: flex;
+    min-height: 100vh;
+    background: #EFF6FF;
+}
+
+.left {
+    width: 50%;
+    flex-shrink: 0;
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.right {
+    width: 50%;
+    padding: 48px 52px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    background: #fff;
+}
+
+.right h1 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #7B8A92;
+}
+
+.right > p {
+    font-size: 14px;
+    color: #96A5B1;
+    margin-top: -12px;
+}
+
+.register-buttons {
+    display: flex;
+    gap: 14px;
+}
+
+.register-buttons button {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 13px 16px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Barlow', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.15s;
+}
+
+.register-buttons button:first-child {
+    background: #255A9B;
+}
+
+.register-buttons button:last-child {
+    background: #0076B6;
+}
+
+.register-buttons button:hover {
+    opacity: 0.88;
+    transform: translateY(-1px);
+}
+
+.main > .right > span {
+    text-align: center;
+    font-size: 13px;
+    color: #AFAFAF;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main > .right > span::before,
+.main > .right > span::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #EEEEEE;
+}
+
+.input-fields {
+    display: flex;
+    gap: 14px;
+}
+
+.input-fields input {
+    flex: 1;
+    padding: 12px 14px;
+    border: 1.5px solid #EEEEEE;
+    border-radius: 5px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px;
+    color: #2A4A5C;
+    outline: none;
+    transition: border-color 0.18s, box-shadow 0.18s;
+}
+
+.input-fields input::placeholder {
+    color: #AFAFAF;
+}
+
+.input-fields input:focus {
+    border-color: #3698FB;
+    box-shadow: 0 0 0 3px rgba(54, 152, 251, 0.12);
+}
+
+.investor-type {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.investor-type h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #7B8A92;
+}
+
+.investor-type > p {
+    font-size: 13px;
+    color: #96A5B1;
+    margin-top: -8px;
+}
+
+.investor-radio {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.investor-radio label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 14px;
+    color: #2A4A5C;
+    cursor: pointer;
+}
+
+.investor-radio input[type="radio"] {
+    accent-color: #3698FB;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.hint-icon {
+    font-size: 13px;
+    color: #AFAFAF;
+    cursor: default;
+    position: relative;
+}
+
+.hint-icon:hover::after {
+    content: 'Natural person investing on own behalf';
+    position: absolute;
+    bottom: calc(100% + 6px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2A4A5C;
+    color: #fff;
+    font-size: 11px;
+    white-space: nowrap;
+    padding: 5px 10px;
+    border-radius: 4px;
+    z-index: 10;
+}
+
+.investor-type > label {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 13px;
+    color: #AFAFAF;
+    cursor: pointer;
+}
+
+.investor-type > label input[type="checkbox"] {
+    accent-color: #3698FB;
+    width: 15px;
+    height: 15px;
+    margin-top: 1px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.investor-type > label a {
+    color: #3698FB;
+    text-decoration: none;
+}
+
+.investor-type > label a:hover {
+    text-decoration: underline;
+}
+
+.investor-type > button {
+    width: 100%;
+    padding: 14px;
+    background: #3698FB;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.18s, transform 0.15s, box-shadow 0.18s;
+}
+
+.investor-type > button:hover {
+    background: #2489f0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(54, 152, 251, 0.3);
+}
+
+.investor-type > button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+@media (max-width: 720px) {
+    .main {
+        flex-direction: column;
+    }
+    .left {
+        width: 100%;
+        height: 220px;
+    }
+    .right {
+        width: 100%;
+        padding: 28px 24px;
+    }
+    .input-fields {
+        flex-direction: column;
+    }
+    .register-buttons {
+        flex-direction: column;
+    }
+}
